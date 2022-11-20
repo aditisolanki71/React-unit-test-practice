@@ -7,9 +7,9 @@ export function replaceCamelWithSpaces(colorName) {
 }
 
 function App() {
-  const [buttonColor,setButtonColor] = useState("red");
+  const [buttonColor,setButtonColor] = useState("MediumVioletRed");
   const [disabled,setDisabled] = useState(false);
-  const newButtonColor = buttonColor === "red" ? "blue" : "red"; 
+  const newButtonColor = buttonColor === "MediumVioletRed" ? "MidnightBlue" : "MediumVioletRed"; 
   return (
     <div className="App">
       {/* Quiz-1 -->checkbox is checked then btn disable else btn is enable on unchecked */}
@@ -30,6 +30,8 @@ function App() {
         {/* Quiz-2 disable button -> button is gray -> enable button -> button is red
         click btn to change color -> disable button --> button is gray
         enable button --> button is blue */}
+
+        {/* Quiz-3 Color strts with MediumVioletRed and changes to MidnightBlue */}
      </div>
   );
 }
